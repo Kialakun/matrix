@@ -1,6 +1,4 @@
-// Matrix library for computation.
-// This library is limited 2x2 and 2x1 matrices, as the Constant Velocity Model Kalman Filter
-// mainly only deals with matrices of these sizes.
+// Matrix operations library for computation.
 
 package matrix
 
