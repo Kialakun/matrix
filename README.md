@@ -15,7 +15,7 @@ aT := a.T()
 // get Inverse
 aI := a.Inv()
 
-// cross product
+// matrix multiplication
 b := a.X(a.T()).X(a.Inv())
 ```
 PS: This was initially developed to help me code Kalman Filters in Golang. 

@@ -8,7 +8,7 @@ import (
 )
 
 type Matrice interface {
-	X(M) M                    // cross product
+	X(M) M                    // product
 	T() M                     // Transpose
 	Add(M) M                  // add a matrix
 	Sub(M) M                  // subtract the matrix from a matrix
@@ -113,7 +113,7 @@ func (a M) Sub(b M) M {
 	return result
 }
 
-// perform a matrix cross product
+// perform a matrix product
 func (a M) X(b M) M {
 	// log.Println(len(b[0]), len(a))
 	result := zeroes(len(b[0]), len(a))
