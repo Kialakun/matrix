@@ -3,8 +3,6 @@ package matrix
 import (
 	"log"
 	"math"
-
-	"github.com/Kialakun/matrix"
 )
 
 // LU (Lower Upper Decomposition)
@@ -123,7 +121,7 @@ func (a M) HadamardProduct(b M) (R M) {
 		log.Fatal("matrix mismatch, cannot take hammard product of matrices of different sizes")
 		return
 	}
-	R = matrix.Zeroes(dx, dy)
+	R = Zeroes(dx, dy)
 	for y := 0; y < dy; y++ {
 		for x := 0; x < dx; x++ {
 			R[y][x] = a[y][x] * b[y][x]
