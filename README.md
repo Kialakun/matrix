@@ -4,7 +4,7 @@ Linear Algebra for humans.
 
 ## Example
 ```
-a = matrix.M{
+a := matrix.M{
     {1, 2},
     {3, 4},
 }
